@@ -1,0 +1,56 @@
+/* FormEmpleado.css */
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #e4e4e4;
+    min-height: 100vh;
+    --dm-bg: #111;
+    padding: 20px; /* Espaciado adicional */
+}
+
+.main.dark {
+    background-color: var(--dm-bg);
+    color: white;
+}
+
+.container1 {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 40px auto; /* Espaciado superior y centrado horizontal */
+    max-width: 400px; /* Ancho máximo del contenedor */
+}
+
+.input {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado entre inputs */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.button {
+    background-color: #05454d; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave */
+    display: block; /* Para centrar el botón */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.button:hover {
+    background-color: #810551; /* Color del botón al pasar el mouse */
+}
+
+h3 {
+    text-align: center; /* Centra el texto del encabezado */
+    margin-bottom: 20px; /* Margen inferior */
+    color: #333; /* Color del texto */
+}

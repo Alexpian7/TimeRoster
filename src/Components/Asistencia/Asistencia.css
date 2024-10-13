@@ -1,0 +1,131 @@
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #e4e4e4;
+    min-height: 100vh;
+    --dm-bg: #111;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.main.dark {
+    background-color: var(--dm-bg);
+    color: white;
+}
+
+/* Estilos para el contenedor del formulario */
+.container1 {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para inputs y botones */
+.input, select {
+    padding: 10px;
+    margin: 10px 0; /* Solo margen vertical para más espacio */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    transition: border-color 0.3s ease; /* Transición suave */
+}
+
+.input:focus, select:focus {
+    border-color: #4caf50; /* Color de borde al enfocar */
+    outline: none; /* Quitar el borde azul predeterminado */
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la tabla */
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px; /* Limitar el ancho de la tabla */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra de la tabla */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Aumentar el padding */
+    text-align: left;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+th {
+    background-color: #4caf50; /* Color de fondo para encabezados */
+    color: white; /* Color del texto en encabezados */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Color de fondo al pasar el ratón sobre las filas */
+}
+
+/* Estilos para etiquetas */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold; /* Hacer que las etiquetas sean más destacadas */
+}
+
+/* Estilos para el botón de exportar */
+.export-button {
+    margin: 20px 0; /* Margen vertical para separación */
+    padding: 10px 15px;
+    background-color: #007bff; /* Color del botón de exportar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Posicionar el botón sobre la tabla */
+.export-button-container {
+    display: flex;
+    justify-content: center; /* Centrar el botón */
+    margin-bottom: -30px; /* Elevar el botón sobre la tabla */
+}
+
+.export-button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos adicionales para una mejor presentación */
+h2 {
+    margin-bottom: 20px;
+    color: #333; /* Color del texto del encabezado */
+}
+
+h3 {
+    margin-top: 20px;
+    color: #444; /* Color del texto de subtítulos */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .input, select {
+        width: 100%; /* Hacer inputs y selects del 100% en pantallas pequeñas */
+        max-width: none; /* Remover el ancho máximo */
+    }
+    
+    .export-button-container {
+        margin-bottom: 10px; /* Ajustar margen en pantallas pequeñas */
+    }
+}
