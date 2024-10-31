@@ -6,7 +6,7 @@ import { ThemeContext } from '../../ThemeContext';
 import { db } from '../../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 
-function FormEmpleado({ setEmployees }) { // Añadido setEmployees como prop
+function FormEmpleado({ setEmployees }) { 
   const { DarkTheme } = useContext(ThemeContext);
   const [name, setName] = useState('');
   const [documento, setDocumento] = useState('');
@@ -20,7 +20,7 @@ function FormEmpleado({ setEmployees }) { // Añadido setEmployees como prop
         });
         console.log('Empleado agregado con ID:', docRef.id);
         
-        // Agregar el nuevo empleado a la lista
+        
         setEmployees(prevEmployees => [
           ...prevEmployees,
           { id: docRef.id, nombre: name, documento: documento }

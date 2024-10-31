@@ -3,7 +3,7 @@ import './Navigation.css';
 import { FaHome } from "react-icons/fa";
 import { IoPersonAdd } from "react-icons/io5";
 import { IoIosPeople } from "react-icons/io";
-import { MdAccessTimeFilled, MdAnalytics, MdOutlineNotificationsActive, MdSwapHoriz } from "react-icons/md";
+import { MdAccessTimeFilled, MdAnalytics,  MdSwapHoriz } from "react-icons/md";
 import { FiChevronLeft } from "react-icons/fi";
 import { ThemeContext } from '../../../ThemeContext';
 import Nav from '../../NaviconTemplate/Nav'; // Asegúrate de que este import sea correcto
@@ -52,7 +52,7 @@ const Navigation = () => {
             
             <div className='divider'></div>
 
-            <Nav Icon={MdOutlineNotificationsActive} title="Notificaciones" to="/notificaciones" />
+            
             <Nav
                 Icon={MdSwapHoriz}
                 title={`${DarkTheme ? "Cambiar a Tema Claro" : "Cambiar a Tema Oscuro"}`}

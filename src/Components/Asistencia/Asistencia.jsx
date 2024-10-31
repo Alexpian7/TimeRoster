@@ -6,6 +6,7 @@ import { db } from '../../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
+import './Asistencia.css'
 
 const Asistencia = () => {
   const { DarkTheme } = useContext(ThemeContext); 
@@ -97,7 +98,7 @@ const Asistencia = () => {
       pdf.addImage(imgBackground, 'JPEG', 0, 0, 297, 210);
 
       pdf.setFontSize(20);
-      pdf.text('Registros de Asistencia', 105, 20, { align: 'center' });
+      pdf.text('Registro de Asistencia', 105, 20, { align: 'center' });
 
       const imgWidth = 297;
       const pageHeight = 210;
@@ -124,7 +125,7 @@ const Asistencia = () => {
     <div className={`main ${DarkTheme ? "dark" : ""}`}>
       <Header /> 
       <Content /> 
-
+<div className='asistencia-container'>
       <h2>Seleccionar Empleado</h2>
       <select
         value={selectedEmployee}
@@ -258,6 +259,7 @@ const Asistencia = () => {
       </table>
 
       <button onClick={exportToPDF}>Exportar a PDF</button>
+    </div>
     </div>
   );
 };

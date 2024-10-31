@@ -18,7 +18,7 @@ const Main = () => {
         <h1>Bienvenido a TimeRoster</h1>
 
         <h2>Descripción del Proyecto</h2>
-        <p>TimeRoster es una aplicación de gestión de horarios diseñada para facilitar el registro y seguimiento de la asistencia de empleados. Permite a los usuarios registrar horas de entrada y salida, gestionar ausencias y calcular automáticamente horas trabajadas y horas extras.</p>
+        <p>TimeRoster es una aplicación de gestión de horarios diseñada para facilitar el registro y seguimiento de la asistencia de empleados. Permite al administrador registrar horas de entrada y salida, gestionar ausencias y calcular automáticamente horas trabajadas y horas extras.</p>
         
         <h2>Características Principales</h2>
         <ul>

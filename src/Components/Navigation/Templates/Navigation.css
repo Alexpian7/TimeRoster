@@ -16,8 +16,8 @@
 }
 
 .navigation.dark {
-  background: linear-gradient(10deg, #000000, #333333); /* Cambia esto para el tema oscuro */
-  color: white; /* Asegúrate de que el texto sea blanco */
+  background: linear-gradient(10deg, #000000, #333333); 
+  color: white; 
 }
 
 .navigation .menu {
